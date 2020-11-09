@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Xavier Groleau} \\ \vspace{1pt}
+    \small (819) 919-5022 $|$ \href{mailto:xavgroleau@gmail.com}{\underline{xavgroleau@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/xavier-groleau/}{\underline{linkedin.com/in/xavier-groleau}} $|$
+    \href{https://github.com/xgroleau}{\underline{github.com/xgroleau}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Sherbrooke}{Sherbrooke, Qc}
+      {Computer engineering (coop programm)}{2017 -- 2021}
+    \resumeSubheading
+      {CÉGEP of Sherbrooke}{Sherbrooke, Qc}
+      {Natural sciences}{2015 - 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Artificial intelligence intern}{September 2020 -- Present}
+      {University of Sherbrooke}{Sherbrooke, Qc}
+      \resumeItemListStart
+        \resumeItem{Developed multiple machine learning algorithm using Keras and TensorFlow}
+        \resumeItem{Gave presentations on campus}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IoT software developer}{Jan 2020 -- Apr 2020}
+      {Genetec}{Quebec, Qc}
+      \resumeItemListStart
+        \resumeItem{Developed a web service in C\# for IoT device management interfacing with docker and Azure}
+        \resumeItem{Developed a web application using TypeScript, React and Redux}
+        \resumeItem{Developed a daemon on an embedded linux device in Erlang}
+        \resumeItem{Offered support for the QA team to assure high fault tolerence}
+        \resumeItem{Developed under Kanban methodologies}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Embedded developer}{May 2019 - Dec 2018}
+      {Hop-Child Technologies}{Sherbrooke, Qc}
+      \resumeItemListStart
+        \resumeItem{Developed embedded systems in C}
+        \resumeItem{Developed web applications using TypeScript, Angular and ExpressJs}
+        \resumeItem{Developed a product used by people with autism spectrum disorder}
+        \resumeItem{Participated in decision making of a small business}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {DevOps intern}{Sep 2018 - Dec 2018}
+      {Optel Group}{Quebec, Qc}
+      \resumeItemListStart
+        \resumeItem{Developed a fullstack application in JavaScript and Python using React and Django}
+        \resumeItem{Managed a PostgreSQL database and it's backups}
+        \resumeItem{Deployed containerized applications using Docker and Kubernetes in the cloud}
+        \resumeItem{Reduced downtime on micro-services updates}
+        \resumeItem{Developed under Scrum methodologies}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {Project SwarmUS}{May 2020 - Present}
+          \resumeItemListStart
+            \resumeItem{Developed an swarm robotic solution for mapping applications (SLAM)}
+            \resumeItem{Developed embedded C++ modules with ROS integration}
+            \resumeItem{Developed on a custom language using a virtual machine on an embedded ARM MCU}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {The machine, Engineering games}{Sep 2019 - Jan 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a robotic system in four months that can complete a complex problem}
+            \resumeItem{Worked in a multidisciplinairy environment}
+            \resumeItem{Write engineering reports in LaTeX}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {Wearable}{Jan 2019 - May 2019}
+          \resumeItemListStart
+            \resumeItem{Developed a wearable prototype on an FPGA}
+            \resumeItem{Developed a web server on an ARM processor in C}
+            \resumeItem{Developed a web interface showing the data from the wearable using Angular in TypeScript}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{School implication}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {Computer engineering representative of the 63th promotion}{Jan 2018 - May 2018}
+          \resumeItemListStart
+            \resumeItem{Organised events with the members of the promotions}
+            \resumeItem{Ordered and sold promotional objects}
+            \resumeItem{Communicated with the committees and the students}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, C\#, Rust, HTML, CSS, SQL} \\
+     \textbf{Frameworks}{: React, Angular, Node.js, Flask, Django, PyTest, GoogleTest, Jest} \\
+     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, Emacs, Vim, VS Code, Visual Studio, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: TensorFlow, Keras, NumPy, Pandas, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
