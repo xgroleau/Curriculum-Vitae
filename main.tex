@@ -16,21 +16,16 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
+\usepackage[english,french]{babel}
+\usepackage{ifthen}
 \usepackage{tabularx}
 \input{glyphtounicode}
 
 
+
 %----------FONT OPTIONS----------
 % sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
+\usepackage[sfdefault]{FiraSans}
 
 
 \pagestyle{fancy}
@@ -99,9 +94,38 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+
+%% language support
+%
+% Environment settings
+%
+
+\newcommand{\setdoclang}[2]
+{
+    \def\doclang{#2}
+    \def\doclangshort{#1}
+}
+
+
+%
+% Multilingual support commands
+%
+\newcommand{\langif}[3]
+{
+    \ifthenelse{\equal{#1}{\doclang} \or \equal{#1}{\doclangshort}}
+        {#2}
+        {#3}%
+}
+\newcommand{\lang}[2]{\langif{#1}{#2}{}}
+\newcommand{\sectionlang}[2]{\lang{#1}{\section{#2}}}
+\newcommand{\subsectionlang}[2]{\lang{#1}{\subsection{#2}}}
+\newcommand{\subsubsectionlang}[2]{\lang{#1}{\subsubsection{#2}}}
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%\setdoclang{en}{english}
+\setdoclang{fr}{french}
 
 \begin{document}
 
@@ -123,13 +147,20 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Sherbrooke}{Sherbrooke, Qc}
-      {Computer engineering (coop programm)}{2017 -- 2021}
+      {University de Sherbrooke}{Sherbrooke, Qc}
+      {
+        \lang{en}{Computer engineering (coop programm)}
+        \lang{fr}{Génie informatique (programme coop)}
+      }{2017 -- 2021}
     \resumeSubheading
-      {CÉGEP of Sherbrooke}{Sherbrooke, Qc}
-      {Natural sciences}{2015 - 2017}
+      {CÉGEP de Sherbrooke}{Sherbrooke, Qc}
+      {
+        \lang{en}{Natural sciences}
+        \lang{fr}{Sciences de la nature}
+      }{2015 - 2017}
   \resumeSubHeadingListEnd
 
+\sectionlang{en}{Testing this}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
