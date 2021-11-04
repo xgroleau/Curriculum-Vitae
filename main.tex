@@ -11,6 +11,7 @@
 \usepackage{packages/multilanguage}
 
 \begin{document}
+
 \setdoclang{en}{english}
 %\setdoclang{fr}{french}
 
@@ -25,9 +26,9 @@
     \lang{fr}{\resumeSubheading{#5}{#6}{#7}{#8}}
 }
 
-\newcommand{\resumeItemEnFr}[4]{
-    \lang{en}{\resumeItem{#1}{#2}}
-    \lang{fr}{\resumeItem{#3}{#4}}
+\newcommand{\resumeItemEnFr}[2]{
+    \lang{en}{\resumeItem{#1}}
+    \lang{fr}{\resumeItem{#2}}
 }
 
 %-----------Document-----------
@@ -43,12 +44,12 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheadingEnFr
-        {University de Sherbrooke}{Sherbrooke, Qc}{Computer engineering (coop programm)}{2017 -- 2021}
-        {University de Sherbrooke}{Sherbrooke, Qc}{Génie informatique (programme coop)}{2017 -- 2021}
-    \resumeSubheadingEnFr
-        {CÉGEP de Sherbrooke}{Sherbrooke, Qc}{Natural sciences}{2015 - 2017}
-        {CÉGEP de Sherbrooke}{Sherbrooke, Qc}{Sciences de la nature}{2015 - 2017}
+        \resumeSubheadingEnFr
+            {University de Sherbrooke}{Sherbrooke, Qc}{Computer engineering (coop programm)}{2017 -- 2021}
+            {University de Sherbrooke}{Sherbrooke, Qc}{Génie informatique (programme coop)}{2017 -- 2021}
+        \resumeSubheadingEnFr
+            {CÉGEP de Sherbrooke}{Sherbrooke, Qc}{Natural sciences}{2015 - 2017}
+            {CÉGEP de Sherbrooke}{Sherbrooke, Qc}{Sciences de la nature}{2015 - 2017}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
@@ -86,45 +87,45 @@
                 {Use the supercomputers of Compute Canada}
                 {Utiliser les superordinateurs de Calcul Canada}
         \resumeItemListEnd
-      
+        
     \resumeSubheadingEnFr
-      {IoT software developer intern}{Winter 2020}{Genetec}{Quebec, Qc}
-      {Stagiaire développeur IoT}{Hiver 2020}{Genetec}{Québec, Qc}
-      \resumeItemListStart
-        \resumeItemEnFr
-          {Design and code a web service to manage IoT devices in C\#, interfacing with Docker and Azure}
-          {Concevoir et programmer un service de gestion d'appareils IoT en C\#, interfaçant avec Docker et Azure}
-        \resumeItemEnFr
-          {Design and code a web applications using TypeScript, React and Redux}
-          {Concevoir et programmer des applications web en TypeScript avec React et Redux}
-        \resumeItemEnFr
-          {Design and code a daemon on an embedded Linux device in Erlang}
-          {Concevoir et programmer un \«daemon\» pour un appareil Linux embarqué en Erlang}
-        \resumeItemEnFr
-          {Design and code micros-services in C\# using .NET core and Azure}
-          {Concevoir et développer des micros-services en C# avec .NET core sur Azure}
-        \resumeItemEnFr
-          {Develop under Kanban methodologies}
-          {Développer sous des méthodologies agiles en Kanban}
-      \resumeItemListEnd
+        {IoT software developer intern}{Winter 2020}{Genetec}{Quebec, Qc}
+        {Stagiaire développeur IoT}{Hiver 2020}{Genetec}{Québec, Qc}
+        \resumeItemListStart
+            \resumeItemEnFr
+                {Design and code a web service to manage IoT devices in C\#, interfacing with Docker and Azure}
+                {Concevoir et programmer un service de gestion d'appareils IoT en C\#, interfaçant avec Docker et Azure}
+            \resumeItemEnFr
+                {Design and code a web applications using TypeScript, React and Redux}
+                {Concevoir et programmer des applications web en TypeScript avec React et Redux}
+            \resumeItemEnFr
+                {Design and code a daemon on an embedded Linux device in Erlang}
+                {Concevoir et programmer un \«daemon\» pour un appareil Linux embarqué en Erlang}
+            \resumeItemEnFr
+                {Design and code micros-services in C\# using .NET core and Azure}
+                {Concevoir et développer des micros-services en C\# avec .NET core sur Azure}
+            \resumeItemEnFr
+                {Develop under Kanban methodologies}
+                {Développer sous des méthodologies agiles en Kanban}
+        \resumeItemListEnd
 
     \resumeSubheadingEnFr
       {Embedded development intern}{Summer 2019}{Hop Technologies}{Sherbrooke, Qc}
       {Stagiaire développeur embarqué}{Été 20019}{Hop Technologies}{Sherbrooke, Qc}
-      \resumeItemListStart
-        \resumeItemEnFr
-          {Design and code an embedded system using FreeRTOS in C}
-          {Concevoir et programmer un système embarqué utilisant FreeRTOS en C}
-        \resumeItemEnFr
-          {Design and code web applications using TypeScript, Angular and ExpressJs}
-          {Concevoir et programmer des applications en TypeScript avec Angular et ExpressJS}
-        \resumeItemEnFr
-          {Developed and develop a product used by person with an autism spectrum disorder}
-          {Concevoir et développer un produit utilisé par des personnes autistes}
-        \resumeItemEnFr
-          {Actively participate in the decision making in a start up}
-          {Participer activement aux prises de décisions à l'intérieur d'une petite entreprise}
-    \resumeItemListEnd
+        \resumeItemListStart
+            \resumeItemEnFr
+                {Design and code an embedded system using FreeRTOS in C}
+                {Concevoir et programmer un système embarqué utilisant FreeRTOS en C}
+            \resumeItemEnFr
+                {Design and code web applications using TypeScript, Angular and ExpressJs}
+                {Concevoir et programmer des applications en TypeScript avec Angular et ExpressJS}
+            \resumeItemEnFr
+                {Developed and develop a product used by person with an autism spectrum disorder}
+                {Concevoir et développer un produit utilisé par des personnes autistes}
+            \resumeItemEnFr
+                {Actively participate in the decision making in a start up}
+                {Participer activement aux prises de décisions à l'intérieur d'une petite entreprise}
+        \resumeItemListEnd
 
     \resumeSubheading
       {DevOps intern}{Sep 2018 - Dec 2018}
@@ -137,7 +138,7 @@
         \resumeItem{Developed under Scrum methodologies}
       \resumeItemListEnd
 
-  \resumeSubHeadingListEnd
+    \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
