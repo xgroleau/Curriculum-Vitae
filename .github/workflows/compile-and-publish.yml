@@ -1,5 +1,9 @@
 name: Build LaTeX document
-on: [push]
+
+on:
+  push:
+    branches: [master, main]
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -10,8 +14,9 @@ jobs:
         uses: dante-ev/latex-action@latest
         with:
           root_file: main.tex
-      - name: Upload pdf
-        uses: actions/upload-artifact@v2
+      - name: Update release
+        uses: johnwbyrd/update-release@v1
         with:
-          name: resume-en
-          path: main.pdf
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release: latest
+          files: main.pdf
