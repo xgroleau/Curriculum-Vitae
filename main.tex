@@ -30,6 +30,10 @@
     \lang{en}{\resumeItem{#1}}
     \lang{fr}{\resumeItem{#2}}
 }
+\newcommand{\resumeProjectHeadingEnFr}[4]{
+    \lang{en}{\resumeProjectHeading{#1}{#2}}
+    \lang{fr}{\resumeProjectHeading{#3}{#4}}
+}
 
 %-----------Document-----------
 
@@ -127,15 +131,22 @@
                 {Participer activement aux prises de décisions à l'intérieur d'une petite entreprise}
         \resumeItemListEnd
 
-    \resumeSubheading
-      {DevOps intern}{Sep 2018 - Dec 2018}
-      {Optel Group}{Quebec, Qc}
+    \resumeSubheadingEnFr
+      {Full stack and DevOps intern}{Sep 2018 - Dec 2018}{Optel Group}{Quebec, Qc}
+      {Stagiaire développeur full stack et DevOps}{Sep 2018 - Dec 2018}{Optel Group}{Quebec, Qc}
       \resumeItemListStart
-        \resumeItem{Developed a fullstack application in JavaScript and Python using React and Django}
-        \resumeItem{Managed a PostgreSQL database and it's backups}
-        \resumeItem{Deployed containerized applications using Docker and Kubernetes in the cloud}
-        \resumeItem{Reduced downtime on micro-services updates}
-        \resumeItem{Developed under Scrum methodologies}
+        \resumeItemEnFr
+            {Design and code full stack applications with JavaScript, Python using React and Django}
+            {Concevoir et programmer des applications en Javascript et Python avec React et Django}
+        \resumeItemEnFr
+            {Manage a PostgreSQL database and its backups}
+            {Gérer une base de données PostgreSQL ainsi que ses sauvegardes}
+        \resumeItemEnFr
+            {Deploy containerized applications with Docker and Kubernetes in the cloud}
+            {Déployer des applications conteneurisées avec Docker dans Kubernetes sur le cloud}
+        \resumeItemEnFr
+            {Develop under Scrum methodologies}
+            {Développer sous des méthodologies agiles en Scrum}
       \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -144,37 +155,113 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {Project SwarmUS}{May 2020 - Present}
+      \resumeProjectHeadingEnFr
+          {Major design project: SwarmUS}{May 2020 - Present}
+          {Projet majeur de conception: SwarmUS}{Mai 2020 - Aujourd'hui}
           \resumeItemListStart
-            \resumeItem{Developed an swarm robotic solution for mapping applications (SLAM)}
-            \resumeItem{Developed embedded C++ modules with ROS integration}
-            \resumeItem{Developed on a custom language using a virtual machine on an embedded ARM MCU}
+            \resumeItemEnFr
+                {Develop and integrate a virtual machine on a microcontroller}
+                {Développer et intégrer une machine virtuelle sur un microcontrôleur}
+            \resumeItemEnFr
+                {Develop a messaging system in a swarm using Protocol Buffer}
+                {Développer un système de messagerie dans un essaim avec Protocol Buffers}
+            \resumeItemEnFr
+                {Design a distributed swarm robotic application that maps its environment (SLAM)}
+                {Concevoir une application robotique d’essaim distribuée effectuant de la cartographie (SLAM)}
+            \resumeItemEnFr
+                {Design and code ROS modules in C++ for the swarm capabilities}
+                {Programmer des modules en C++ avec ROS pour permettre le fonctionnement de l’essaim}
+            \resumeItemEnFr
+                {Develop the CMake build system, allowing to reuse code and unit tests the embedded code}
+                {Programmer des modules en C++ avec ROS pour permettre le fonctionnement de l’essaim}
+            \resumeItemEnFr
+                {Participate to the development of a major design project spread over a year and a half}
+                {Participer au développement d’un projet majeur de conception étalé sur un an et demi}
           \resumeItemListEnd
-      \resumeProjectHeading
+      \resumeProjectHeadingEnFr
           {The machine, Engineering games}{Sep 2019 - Jan 2020}
+          {Équipe machine des Jeux de Génie}{Sep 2019 - Jan 2020}
           \resumeItemListStart
-            \resumeItem{Developed a robotic system in four months that can complete a complex problem}
-            \resumeItem{Worked in a multidisciplinairy environment}
-            \resumeItem{Write engineering reports in LaTeX}
+            \resumeItemEnFr
+                {Develop a robotic system in four months that can complete a complex problem}
+                {Concevoir et développer un système robotique surmontant un problème complexe}
+            \resumeItemEnFr
+                {Work in a multidisciplinairy environment}
+                {Travailler avec une équipe multidisciplinaire}
+            \resumeItemEnFr
+                {Write engineering reports in LaTeX}
+                {Écrire des rapports d’ingénierie écrits en LaTeX}
           \resumeItemListEnd
-      \resumeProjectHeading
-          {Wearable}{Jan 2019 - May 2019}
+      \resumeProjectHeadingEnFr
+          {Wearable project}{Jan 2019 - May 2019}
+          {Projet appareil portatif}{Jan 2019 - Mai 2019}
           \resumeItemListStart
-            \resumeItem{Developed a wearable prototype on an FPGA}
-            \resumeItem{Developed a web server on an ARM processor in C}
-            \resumeItem{Developed a web interface showing the data from the wearable using Angular in TypeScript}
+            \resumeItemEnFr
+                {Develop a wearable prototype on an FPGA}
+                {Concevoir un prototype de « wearable » sur FPGA}
+            \resumeItemEnFr
+                {Develop a web server on an ARM processor using C and FreeRTOS}
+                {Développer un serveur web sur un processeur ARM embarqué en C et FreeRTOS}
+            \resumeItemEnFr
+                {Develop a web interface showing live data of the wearable using Angular and Typescript}
+                {Développer un interface web affichant les données du « wearable » avec Angular en Typescrip}
+          \resumeItemListEnd
+      \resumeProjectHeadingEnFr
+          {Application with sound recognition }{Jan 2018 - May 2018}
+          {Application avec reconnaissance sonore}{Jan 2018 - Mai 2018}
+          \resumeItemListStart
+            \resumeItemEnFr
+                {Create and conceptualise an application with vocals}
+                {Concevoir une application à commande vocale}
+            \resumeItemEnFr
+                {Use an FPGA card to process digital data from a microphone}
+                {Utiliser une carte FPGA pour traiter des données numériques provenant d’un micro}
+            \resumeItemEnFr
+                {Program a user interface in C++ and Qt}
+                {Programmer une interface graphique en C++ avec Qt}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 \section{School implication}
     \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {Computer engineering representative of the 63th promotion}{Jan 2018 - May 2018}
+      \resumeProjectHeadingEnFr
+          {Study aid}{Winter 2021}
+          {Entraide à l’étude}{Hiver 2021}
           \resumeItemListStart
-            \resumeItem{Organised events with the members of the promotions}
-            \resumeItem{Ordered and sold promotional objects}
-            \resumeItem{Communicated with the committees and the students}
+            \resumeItemEnFr
+                {Help engineering students to prepare for their exams}
+                {Aider des étudiants de génie à se préparer pour leurs examens}
+            \resumeItemEnFr
+                {Help engineering students understand exercises seen in class}
+                {Accompagner des étudiants pour résoudre les problèmes vus en classe}
+            \resumeItemEnFr
+                {Contribute to the management of the study group}
+                {Participer à la gestion d’un groupe d’entraide à l’étude}
+          \resumeItemListEnd
+      \resumeProjectHeadingEnFr
+          {Computer engineering representative of the 63th promotion}{Winter 2018}
+          {Représentant de génie informatique 63e promotion}{Hiver 2018}
+          \resumeItemListStart
+            \resumeItemEnFr
+                {Organise events with the members of the promotion}
+                {Organiser des évènements avec les membres de la promotion ou de la concentration}
+            \resumeItemEnFr
+                {Order or sell promotional objects}
+                {Commander et vendre des objets promotionnels}
+            \resumeItemEnFr
+                {Communicate with the comities and the students}
+                {Communiquer entre les comités et les étudiants de la concentration}
+          \resumeItemListEnd
+      \resumeProjectHeadingEnFr
+          {Tutoring of two students in an elementary school from an underprivileged area}{Winter 2017}
+          {Tutoring of two students in an elementary school from an underprivileged area}{Hiver 2017}
+          \resumeItemListStart
+            \resumeItemEnFr
+                {Teach sciences to two elementary school students}
+                {Enseigner des sciences à deux étudiants du primaire}
+            \resumeItemEnFr
+                {Tutor two students in a personal science project}
+                {Accompagner deux étudiants du primaire dans des projets personnels de sciences}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
