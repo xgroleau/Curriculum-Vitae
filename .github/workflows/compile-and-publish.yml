@@ -15,9 +15,11 @@ jobs:
         with:
           root_file: main.tex
       - name: Update Release
-        uses: johnwbyrd/update-release@v1.0.0
+        uses: marvinpinto/action-automatic-releases@latest
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          release: latest
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          automatic_release_tag: latest
           prerelease: false
-          files: main.pdf
+          title: Resume
+          files: |
+            main.pdf
