@@ -19,11 +19,7 @@
 \RequirePackage{tabularx}
 \RequirePackage[T1]{fontenc}
 
-
 \RequirePackage[sfdefault]{FiraSans} % Font
-
-
-
 
 
 %----------PAGE STYLE----------
@@ -79,11 +75,17 @@
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small\textbf{#1} & #2 \\
+        \small\textbf{#1} & #2 \\
     \end{tabular*}
+    \vspace{0pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+
+\newcommand{\resumeDatedItem}[2]{
+    \item
+    \hspace{10pt}#1 \mbox{}\hfill #2
+}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 

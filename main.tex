@@ -21,6 +21,10 @@
 \newcommand{\fr}[1]{\lang{fr}{#1}}
 \newcommand{\enfr}[2]{\en{#1}\fr{#2}}
 
+\newcommand{\sectionEnFr}[2]{
+    \lang{en}{\section{#1}}
+    \lang{fr}{\resumeSubheading{2}}
+}
 \newcommand{\resumeSubheadingEnFr}[8]{
     \lang{en}{\resumeSubheading{#1}{#2}{#3}{#4}}
     \lang{fr}{\resumeSubheading{#5}{#6}{#7}{#8}}
@@ -34,6 +38,10 @@
     \lang{en}{\resumeProjectHeading{#1}{#2}}
     \lang{fr}{\resumeProjectHeading{#3}{#4}}
 }
+\newcommand{\resumeDatedItemEnFr}[4]{
+    \lang{en}{\resumeDatedItem{#1}{#2}}
+    \lang{fr}{\resumeDatedItem{#3}{#4}}
+}
 
 %-----------Document-----------
 
@@ -46,7 +54,7 @@
 
 
 %-----------EDUCATION-----------
-\section{Education}
+\sectionEnFr{Education}{Formation}
   \resumeSubHeadingListStart
         \resumeSubheadingEnFr
             {University de Sherbrooke}{Sherbrooke, Qc}{Computer engineering (coop programm)}{2017 -- 2021}
@@ -57,7 +65,7 @@
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\sectionEnFr{Work experience}{Expérience professionnelle}
   \resumeSubHeadingListStart
     \resumeSubheadingEnFr
         {Artificial intelligence intern and particle physics simulation}{Summer 2021}{3iT}{Sherbrooke, Qc}
@@ -153,7 +161,7 @@
 
 
 %-----------PROJECTS-----------
-\section{Projects}
+\sectionEnFr{Academic projects}{Projets académiques}
     \resumeSubHeadingListStart
       \resumeProjectHeadingEnFr
           {Major design project: SwarmUS}{May 2020 - Present}
@@ -222,7 +230,7 @@
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-\section{School implication}
+\sectionEnFr{School implication}{Implication scolaires}
     \resumeSubHeadingListStart
       \resumeProjectHeadingEnFr
           {Study aid}{Winter 2021}
@@ -263,6 +271,28 @@
                 {Tutor two students in a personal science project}
                 {Accompagner deux étudiants du primaire dans des projets personnels de sciences}
           \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+\sectionEnFr{Distinctions and awards}{Prix et distinction}
+    \resumeSubHeadingListStart
+        \resumeDatedItemEnFr
+            {4 times mention of excellence of the 63rd promotion in computer engineering}{2018-2021}
+            {4 fois mention d’excellence de la 63e promotion en génie informatique}{2018-2021}
+        \resumeDatedItemEnFr
+            {1 time recipient of the RESMIQ scholarship}{2021}
+            {1 fois récipient de la bourse du RESMIQ}{2021}
+        \resumeDatedItemEnFr
+            {1 time recipient of the Desjardins university scholarship}{2021}
+            {1 fois récipient de la bourse d’études universitaire de Desjardins}{2021}
+        \resumeDatedItemEnFr
+            {2 times recipient of the USRA scholarship from the NSERC}{2019-2020}
+            {2 fois récipient de la bourse BRPG du CRSNG}{2019 et 2020}
+        \resumeDatedItemEnFr
+            {1 time recipient of the FRQNT scholarship}{2020}
+            {1 fois récipient de la bourse du FRQNT}{2020}
+        \resumeDatedItemEnFr
+            {Obtained the « public’s favorite » prize on an educational robot project}{2017}
+            {Obtention du prix du public, projet de robot-jouet éducatif}{2017}
     \resumeSubHeadingListEnd
 
 %
