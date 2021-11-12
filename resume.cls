@@ -17,6 +17,7 @@
 \RequirePackage[english,french]{babel}
 \RequirePackage{ifthen}
 \RequirePackage{tabularx}
+\RequirePackage{xcolor}
 \RequirePackage[T1]{fontenc}
 
 \RequirePackage[sfdefault]{FiraSans} % Font
@@ -44,13 +45,29 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\large\color{RoyalBlue}
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %----------COMMANDS FOR RESUME----------
+% Header
+\newcommand*{\name}[1]{\def\@name{#1}}
+\newcommand*{\phone}[1]{\def\@phone{#1}}
+\newcommand*{\email}[1]{\def\@email{#1}}
+\newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
+\newcommand*{\github}[1]{\def\@github{#1}}
+
+\newcommand{\insertHeader}[0]{
+    \begin{center}
+        \textbf{\Huge\scshape\@name} \\%
+        \small{\@phone} $|$ %
+        \href{mailto:\@email}{\underline{\@email}} $|$ %
+        \href{https://www.linkedin.com/in/\@linkedin/}{\underline{linkedin.com/in/\@linkedin}} $|$ %
+        \href{https://github.com/\@github/}{\underline{github.com/\@github}}%
+    \end{center}
+}
 
 \newcommand{\resumeItem}[1]{\item #1}
 
@@ -59,12 +76,12 @@
 
 \newcommand{\resumeSubheading}[4]{%
     \item\textbf{#1}\hfill#2\break%
-    \small#3\hfill\textit{\small#4}%
+    \small{#3}\hfill\textit{\small{#4}}%
 }
 
 \newcommand{\resumeSubSubheading}[2]{%
     \item%
-    \textit{\small#1}\hfill\textit{\small#2}%
+    \textit{\small{#1}}\hfill\textit{\small{#2}}%
 }
 
 \newcommand{\resumeProjectHeading}[2]{%
