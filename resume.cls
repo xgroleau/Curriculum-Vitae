@@ -52,30 +52,24 @@
 
 %----------COMMANDS FOR RESUME----------
 
-\newcommand{\resumeItem}[1]{
-    \item #1
-}
-
-\newcommand{\resumeSubheading}[4]{
-    \item
-    \textbf{#1}\hfill#2\break
-    \small#3\hfill\textit{\small#4}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \textit{\small#1}\hfill\textit{\small#2}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \textbf{#1}\hfill#2
-}
+\newcommand{\resumeItem}[1]{\item #1}
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+\newcommand{\resumeDatedItem}[2]{\resumeItem{#1\hfill#2}}
 
-\newcommand{\resumeDatedItem}[2]{
-    \resumeItem{#1\hfill#2}
+\newcommand{\resumeSubheading}[4]{%
+    \item\textbf{#1}\hfill#2\break%
+    \small#3\hfill\textit{\small#4}%
+}
+
+\newcommand{\resumeSubSubheading}[2]{%
+    \item%
+    \textit{\small#1}\hfill\textit{\small#2}%
+}
+
+\newcommand{\resumeProjectHeading}[2]{%
+    \item%
+    \textbf{#1}\hfill#2%
 }
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}

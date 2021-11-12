@@ -6,26 +6,26 @@
 \newcommand{\fr}[1]{\lang{fr}{#1}}
 \newcommand{\enfr}[2]{\en{#1}\fr{#2}}
 
-\newcommand{\sectionEnFr}[2]{
-    \lang{en}{\section{#1}}
-    \lang{fr}{\section{#2}}
+\newcommand{\sectionEnFr}[2]{%
+    \lang{en}{\section{#1}}%
+    \lang{fr}{\section{#2}}%
 }
-\newcommand{\resumeSubheadingEnFr}[8]{
-    \lang{en}{\resumeSubheading{#1}{#2}{#3}{#4}}
-    \lang{fr}{\resumeSubheading{#5}{#6}{#7}{#8}}
+\newcommand{\resumeSubheadingEnFr}[8]{%
+    \lang{en}{\resumeSubheading{#1}{#2}{#3}{#4}}%
+    \lang{fr}{\resumeSubheading{#5}{#6}{#7}{#8}}%
 }
 
-\newcommand{\resumeItemEnFr}[2]{
-    \lang{en}{\resumeItem{#1}}
-    \lang{fr}{\resumeItem{#2}}
+\newcommand{\resumeItemEnFr}[2]{%
+    \lang{en}{\resumeItem{#1}}%
+    \lang{fr}{\resumeItem{#2}}%
 }
-\newcommand{\resumeProjectHeadingEnFr}[4]{
-    \lang{en}{\resumeProjectHeading{#1}{#2}}
-    \lang{fr}{\resumeProjectHeading{#3}{#4}}
+\newcommand{\resumeProjectHeadingEnFr}[4]{%
+    \lang{en}{\resumeProjectHeading{#1}{#2}}%
+    \lang{fr}{\resumeProjectHeading{#3}{#4}}%
 }
-\newcommand{\resumeDatedItemEnFr}[4]{
-    \lang{en}{\resumeDatedItem{#1}{#2}}
-    \lang{fr}{\resumeDatedItem{#3}{#4}}
+\newcommand{\resumeDatedItemEnFr}[4]{%
+    \lang{en}{\resumeDatedItem{#1}{#2}}%
+    \lang{fr}{\resumeDatedItem{#3}{#4}}%
 }
 
 %-----------Document-----------
@@ -42,11 +42,11 @@
 \sectionEnFr{Education}{Formation}
   \resumeSubHeadingListStart
         \resumeSubheadingEnFr
-            {University de Sherbrooke}{Sherbrooke, Qc}{Computer engineering (coop programm)}{2017 -- 2021}
-            {University de Sherbrooke}{Sherbrooke, Qc}{Génie informatique (programme coop)}{2017 -- 2021}
+            {University de Sherbrooke}{Sherbrooke, Qc}{Computer engineering (coop programm)}{2017-2021}
+            {University de Sherbrooke}{Sherbrooke, Qc}{Génie informatique (programme coop)}{2017-2021}
         \resumeSubheadingEnFr
-            {CÉGEP de Sherbrooke}{Sherbrooke, Qc}{Natural sciences}{2015 - 2017}
-            {CÉGEP de Sherbrooke}{Sherbrooke, Qc}{Sciences de la nature}{2015 - 2017}
+            {CÉGEP de Sherbrooke}{Sherbrooke, Qc}{Natural sciences}{2015-2017}
+            {CÉGEP de Sherbrooke}{Sherbrooke, Qc}{Sciences de la nature}{2015-2017}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
@@ -257,6 +257,9 @@
             \resumeItemListEnd
     \resumeSubHeadingListEnd
     
+\newcommand{\testing}[4]{
+    \item#1\hfill#2
+}
 \sectionEnFr{Distinctions and awards}{Prix et distinction}
     \resumeSubHeadingListStart
         \resumeDatedItemEnFr
