@@ -53,33 +53,34 @@
 %----------COMMANDS FOR RESUME----------
 
 \newcommand{\resumeItem}[1]{
-    \item
-    \hspace{1.5em}{#1}
+    \item #1
 }
 
 \newcommand{\resumeSubheading}[4]{
     \item
-    \textbf{#1} \hfill #2
-    \small#3 \hfill \textit{\small #4}
+    \textbf{#1}\hfill#2\break
+    \small#3\hfill\textit{\small#4}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \textit{\small#1} \hfill \textit{\small #2}
+    \textit{\small#1}\hfill\textit{\small#2}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \textbf{#1} \hfill #2
+    \textbf{#1}\hfill#2
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
 
 \newcommand{\resumeDatedItem}[2]{
-    \resumeItem{#1\hfill #2}
+    \resumeItem{#1\hfill#2}
 }
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\item\begin{itemize}[label={}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}

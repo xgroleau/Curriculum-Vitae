@@ -10,10 +10,14 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
-      - name: Compile LaTeX document
+      - name: Compile french LaTeX document
         uses: dante-ev/latex-action@latest
         with:
-          root_file: main.tex
+          root_file: resume_fr.tex
+      - name: Compile english LaTeX document
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: resume_en.tex
       - name: Update Release
         uses: marvinpinto/action-automatic-releases@latest
         with:
@@ -22,4 +26,5 @@ jobs:
           prerelease: false
           title: Resume
           files: |
-            main.pdf
+            resume_fr.pdf
+            resume_en.pdf
