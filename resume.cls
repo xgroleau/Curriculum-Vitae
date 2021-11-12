@@ -51,45 +51,35 @@
 \pdfgentounicode=1
 
 %----------COMMANDS FOR RESUME----------
+
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1}
-  }
+    \item
+    \hspace{1.5em}{#1}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}
+    \item
+    \textbf{#1} \hfill #2
+    \small#3 \hfill \textit{\small #4}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}
+    \textit{\small#1} \hfill \textit{\small #2}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-        \small\textbf{#1} & #2 \\
-    \end{tabular*}
-    \vspace{0pt}
+    \textbf{#1} \hfill #2
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
 
 \newcommand{\resumeDatedItem}[2]{
-    \item
-    \hspace{10pt}#1 \mbox{}\hfill #2
+    \resumeItem{#1 \hfill #2}
 }
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}}
