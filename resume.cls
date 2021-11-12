@@ -76,7 +76,7 @@
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
 
 \newcommand{\resumeDatedItem}[2]{
-    \resumeItem{#1 \hfill #2}
+    \resumeItem{#1\hfill #2}
 }
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
