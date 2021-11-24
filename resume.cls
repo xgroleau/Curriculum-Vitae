@@ -95,4 +95,4 @@
 
 \newcommand{\resumeEnumerationStart}{\begin{itemize}[label={}]}
 \newcommand{\resumeEnumerationEnd}{\end{itemize}}
-\newcommand{\resumeEnumeration}[2]{\item\parbox[t]{0.10\textwidth}{\small{\textbf{#1:}}}\parbox[t]{0.80\textwidth}{\small{#2}}}
+\newcommand{\resumeEnumeration}[2]{\item\parbox[t]{0.15\textwidth}{\small{\textbf{#1:}}}\parbox[t]{0.75\textwidth}{\small{#2}}}
