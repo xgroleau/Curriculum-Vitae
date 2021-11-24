@@ -17,7 +17,7 @@
 \RequirePackage[english,french]{babel}
 \RequirePackage{ifthen}
 \RequirePackage{tabularx}
-\RequirePackage{xcolor}
+\RequirePackage{color}
 \RequirePackage[T1]{fontenc}
 
 \RequirePackage[sfdefault]{FiraSans} % Font
@@ -62,36 +62,37 @@
 \newcommand{\insertHeader}[0]{
     \begin{center}
         \textbf{\Huge\scshape\@name} \\%
-        \small{\@phone} $|$ %
-        \href{mailto:\@email}{\underline{\@email}} $|$ %
-        \href{https://www.linkedin.com/in/\@linkedin/}{\underline{linkedin.com/in/\@linkedin}} $|$ %
-        \href{https://github.com/\@github/}{\underline{github.com/\@github}}%
+        \href{tel:\@phone}{\@phone} $|$ %
+        \href{mailto:\@email}{\@email} $|$ %
+        \href{https://www.linkedin.com/in/\@linkedin/}{linkedin.com/in/\@linkedin} $|$ %
+        \href{https://github.com/\@github/}{github.com/\@github}%
     \end{center}
 }
 
+\newcommand{\resumeItemListStart}{\item\begin{itemize}[label={}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
 \newcommand{\resumeItem}[1]{\item #1}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
-\newcommand{\resumeDatedItem}[2]{\resumeItem{#1\hfill#2}}
-
-\newcommand{\resumeSubheading}[4]{%
-    \item\textbf{#1}\hfill#2\break%
-    \small{#3}\hfill\textit{\small{#4}}%
-}
-
-\newcommand{\resumeSubSubheading}[2]{%
-    \item%
-    \textit{\small{#1}}\hfill\textit{\small{#2}}%
-}
 
 \newcommand{\resumeProjectHeading}[2]{%
     \item%
     \textbf{#1}\hfill#2%
 }
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+\newcommand{\resumeDatedItem}[2]{\resumeItem{#1\hfill#2}}
 
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\item\begin{itemize}[label={}]}
-\newcommand{\resumeItemListEnd}{\end{itemize}}
+\newcommand{\resumeSubheading}[4]{%
+    \item\textbf{#1}\hfill#2\break%
+    \small{#3}\hfill\textit{\small{#4}}%
+}
+\newcommand{\resumeSubSubheading}[2]{%
+    \item%
+    \textit{\small{#1}}\hfill\textit{\small{#2}}%
+}
+
+\newcommand{\resumeEnumerationStart}{\begin{itemize}[label={}]}
+\newcommand{\resumeEnumerationEnd}{\end{itemize}}
+\newcommand{\resumeEnumeration}[2]{\item\parbox[t]{0.10\textwidth}{\small{\textbf{#1:}}}\parbox[t]{0.80\textwidth}{\small{#2}}}

@@ -1,5 +1,3 @@
-
-
 %-----------Commands-----------
 % Simply groups language management in 1 command
 \newcommand{\en}[1]{\lang{en}{#1}}
@@ -27,6 +25,10 @@
     \lang{en}{\resumeDatedItem{#1}{#2}}%
     \lang{fr}{\resumeDatedItem{#3}{#4}}%
 }
+\newcommand{\resumeEnumerationEnFr}[4]{
+    \lang{en}{\resumeEnumeration{#1}{#2}}%
+    \lang{fr}{\resumeEnumeration{#3}{#4}}%
+}
 
 %-----------Header-----------
 
@@ -37,19 +39,33 @@
 \github{xgroleau}
 \insertHeader
 
+%-----------Content-----------
 
-%-----------EDUCATION-----------
 \sectionEnFr{Education}{Formation}
-  \resumeSubHeadingListStart
+    \resumeSubHeadingListStart
         \resumeSubheadingEnFr
-            {University de Sherbrooke}{Sherbrooke, Qc}{Computer engineering (coop programm)}{2017-2021}
+            {University de Sherbrooke}{Sherbrooke, Qc}{Computer engineering (coop program)}{2017-2021}
             {University de Sherbrooke}{Sherbrooke, Qc}{Génie informatique (programme coop)}{2017-2021}
         \resumeSubheadingEnFr
             {CÉGEP de Sherbrooke}{Sherbrooke, Qc}{Natural sciences}{2015-2017}
             {CÉGEP de Sherbrooke}{Sherbrooke, Qc}{Sciences de la nature}{2015-2017}
-  \resumeSubHeadingListEnd
+   \resumeSubHeadingListEnd
+  
 
-%-----------EXPERIENCE-----------
+\sectionEnFr{Skills}{Connaissances particulières}
+    \resumeEnumerationStart
+        \resumeEnumerationEnFr
+            {Computer}{C/C++, Python, C\#, Rust, JavaScript, Erlang, Rust, Lisp, Prolog, Bash, Matlab, VHDL, Artificial Intelligence and machine learning, Data structures and algorithms, CMake, Docker, Kubernetes, Cloud Computing, CI/CD, LaTeX, HTML and CSS, SQL, Git, Microsoft Office}
+            {Informatiques}{C/C++, Python, C\#, Rust, JavaScript, Erlang, Lisp, Prolog, Bash, Matlab, VHDL, Intelligence artificielle et apprentissage machine, Structures de données et algorithmes, CMake, Docker, Kubernetes, Cloud Computing, CI/CD, LaTeX, HTML et CSS, SQL, Git, Suite Office}
+        \resumeEnumerationEnFr
+            {Linguistic}{Bilingual French and English, 6/10 in Spanish}
+            {Linguistique}{Bilingue français et anglais, 6/10 en espagnol}
+        \resumeEnumerationEnFr
+            {Formations}{First aid, CPR, National lifeguard}
+            {Formations}{Premiers soins, RCR, Sauveteur National}
+    \resumeEnumerationEnd
+
+
 \sectionEnFr{Work experience}{Expérience professionnelle}
   \resumeSubHeadingListStart
     \resumeSubheadingEnFr
@@ -58,10 +74,10 @@
             \resumeItemListStart
                 \resumeItemEnFr
                     {Design and code Ct-scan simulation with Geant4 and Gate}
-                    {Concevoir et déveloper des simulations de tomodensitométrie avec Geant4 et Gate}
+                    {Concevoir et développer des simulations de tomodensitométrie avec Geant4 et Gate}
                 \resumeItemEnFr
                     {Design and code deep learning algorithms with Tensorflow and Keras in Python}
-                    {Concevoir et programmer des algorithmes d'apprentissage profond avec Tensorflow et Keras}
+                    {Concevoir et programmer des algorithmes d’apprentissage profond avec Tensorflow et Keras}
                 \resumeItem
                     {Use the supercomputers of Compute Canada}
                     {Utiliser les superordinateurs de Calcul Canada}
@@ -73,13 +89,13 @@
             \resumeItemListStart
                 \resumeItemEnFr
                     {Design and code deep learning algorithms with Tensorflow and Keras in Python}
-                    {Concevoir et programmer des algorithmes d'apprentissage profond avec Tensorflow et Keras}
+                    {Concevoir et programmer des algorithmes d’apprentissage profond avec Tensorflow et Keras}
                 \resumeItemEnFr
                     {Design and code deep learning algorithms with Scikit-learn}
                     {Concevoir et programmer des algorithmes d'apprentissage profond avec Scikit-learn}
                 \resumeItemEnFr
                     {Develop algorithms that will be reimplemented on FPGA}
-                    {Développer des algorithmes qui seront réimplémenté sur des FPGA}
+                    {Développer des algorithmes qui seront implémentés sur des FPGA}
                 \resumeItemEnFr
                     {Use the supercomputers of Compute Canada}
                     {Utiliser les superordinateurs de Calcul Canada}
@@ -91,7 +107,7 @@
             \resumeItemListStart
                 \resumeItemEnFr
                     {Design and code a web service to manage IoT devices in C\#, interfacing with Docker and Azure}
-                    {Concevoir et programmer un service de gestion d'appareils IoT en C\#, interfaçant avec Docker et Azure}
+                    {Concevoir et programmer un service de gestion d’appareils IoT en C\#, interfaçant avec Docker et Azure}
                 \resumeItemEnFr
                     {Design and code a web applications using TypeScript, React and Redux}
                     {Concevoir et programmer des applications web en TypeScript avec React et Redux}
@@ -99,8 +115,8 @@
                     {Design and code a daemon on an embedded Linux device in Erlang}
                     {Concevoir et programmer un «daemon» pour un appareil Linux embarqué en Erlang}
                 \resumeItemEnFr
-                    {Design and code micros-services in C\# using .NET core and Azure}
-                    {Concevoir et développer des micros-services en C\# avec .NET core sur Azure}
+                    {Design and code microservices in C\# using .NET core and Azure}
+                    {Concevoir et développer des microservices en C\# avec .NET core sur Azure}
                 \resumeItemEnFr
                     {Develop under Kanban methodologies}
                     {Développer sous des méthodologies agiles en Kanban}
@@ -117,20 +133,20 @@
                     {Design and code web applications using TypeScript, Angular and ExpressJs}
                     {Concevoir et programmer des applications en TypeScript avec Angular et ExpressJS}
                 \resumeItemEnFr
-                    {Developed and develop a product used by person with an autism spectrum disorder}
+                    {Developed and develop a product used by people with an autism spectrum disorder}
                     {Concevoir et développer un produit utilisé par des personnes autistes}
                 \resumeItemEnFr
-                    {Actively participate in the decision making in a start up}
-                    {Participer activement aux prises de décisions à l'intérieur d'une petite entreprise}
+                    {Actively participate in the decision-making in a start-up}
+                    {Participer activement aux prises de décisions à l’intérieur d’une petite entreprise}
             \resumeItemListEnd
 
     \resumeSubheadingEnFr
       {Full stack and DevOps intern}{Sep 2018 - Dec 2018}{Optel Group}{Quebec, Qc}
-      {Stagiaire développeur full stack et DevOps}{Sep 2018 - Dec 2018}{Optel Group}{Quebec, Qc}
+      {Stagiaire développeur full-stack et DevOps}{Sep 2018 - Dec 2018}{Optel Group}{Quebec, Qc}
             \resumeItemListStart
                 \resumeItemEnFr
-                    {Design and code full stack applications with JavaScript, Python using React and Django}
-                    {Concevoir et programmer des applications en Javascript et Python avec React et Django}
+                    {Design and code full-stack applications with JavaScript, Python using React and Django}
+                    {Concevoir et programmer des applications en JavaScript et Python avec React et Django}
                 \resumeItemEnFr
                     {Manage a PostgreSQL database and its backups}
                     {Gérer une base de données PostgreSQL ainsi que ses sauvegardes}
@@ -144,12 +160,11 @@
     \resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------
 \sectionEnFr{Academic projects}{Projets académiques}
     \resumeSubHeadingListStart
       \resumeProjectHeadingEnFr
           {Major design project: SwarmUS}{May 2020 - Present}
-          {Projet majeur de conception: SwarmUS}{Mai 2020 - Aujourd'hui}
+          {Projet majeur de conception: SwarmUS}{Mai 2020 - Aujourd’hui}
             \resumeItemListStart
                 \resumeItemEnFr
                     {Develop and integrate a virtual machine on a microcontroller}
@@ -178,7 +193,7 @@
                     {Develop a robotic system in four months that can complete a complex problem}
                     {Concevoir et développer un système robotique surmontant un problème complexe}
                 \resumeItemEnFr
-                    {Work in a multidisciplinairy environment}
+                    {Work in a multidisciplinary environment}
                     {Travailler avec une équipe multidisciplinaire}
                 \resumeItemEnFr
                     {Write engineering reports in LaTeX}
@@ -195,8 +210,8 @@
                     {Develop a web server on an ARM processor using C and FreeRTOS}
                     {Développer un serveur web sur un processeur ARM embarqué en C et FreeRTOS}
                 \resumeItemEnFr
-                    {Develop a web interface showing live data of the wearable using Angular and Typescript}
-                    {Développer un interface web affichant les données du « wearable » avec Angular en Typescript}
+                    {Develop a web interface showing live data of the wearable using Angular and TypeScript}
+                    {Développer une interface web affichant les données du « wearable » avec Angular en TypeScript}
             \resumeItemListEnd
       \resumeProjectHeadingEnFr
           {Application with sound recognition }{Jan 2018 - May 2018}
@@ -214,7 +229,8 @@
             \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-\sectionEnFr{School implication}{Implication scolaires}
+
+\sectionEnFr{School implications}{Implications scolaires}
     \resumeSubHeadingListStart
       \resumeProjectHeadingEnFr
           {Study aid}{Winter 2021}
@@ -231,11 +247,11 @@
                     {Participer à la gestion d’un groupe d’entraide à l’étude}
             \resumeItemListEnd
       \resumeProjectHeadingEnFr
-          {Computer engineering representative of the 63th promotion}{Winter 2018}
+          {Computer engineering representative of the 63rd promotion}{Winter 2018}
           {Représentant de génie informatique 63e promotion}{Hiver 2018}
             \resumeItemListStart
                 \resumeItemEnFr
-                    {Organise events with the members of the promotion}
+                    {Organize events with the members of the promotion}
                     {Organiser des évènements avec les membres de la promotion ou de la concentration}
                 \resumeItemEnFr
                     {Order or sell promotional objects}
@@ -256,10 +272,8 @@
                     {Accompagner deux étudiants du primaire dans des projets personnels de sciences}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
-    
-\newcommand{\testing}[4]{
-    \item#1\hfill#2
-}
+  
+  
 \sectionEnFr{Distinctions and awards}{Prix et distinction}
     \resumeSubHeadingListStart
         \resumeDatedItemEnFr
@@ -281,16 +295,3 @@
             {Recipient of the FRQNT scholarship}{2020}
             {Récipient de la bourse du FRQNT}{2020}
     \resumeSubHeadingListEnd
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: C/C++, Python, C\#, Rust, HTML, CSS, SQL} \\
-     \textbf{Frameworks}{: React, Angular, Node.js, Flask, Django, PyTest, GoogleTest, Jest} \\
-     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, Emacs, Vim, VS Code, Visual Studio, IntelliJ, Eclipse} \\
-     \textbf{Libraries}{: TensorFlow, Keras, NumPy, Pandas, Matplotlib}
-    }}
- \end{itemize}
-
