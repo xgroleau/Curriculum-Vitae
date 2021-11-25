@@ -1,6 +1,6 @@
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{udes_rapport}
+\ProvidesClass{resume}
 \LoadClass{article}
 
 
@@ -18,6 +18,7 @@
 \RequirePackage{ifthen}
 \RequirePackage{tabularx}
 \RequirePackage{color}
+\RequirePackage{xparse}
 \RequirePackage[T1]{fontenc}
 
 \RequirePackage[sfdefault]{FiraSans} % Font
@@ -84,9 +85,14 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeSubheading}[4]{%
-    \item\textbf{#1}\hfill#2\break%
-    \small{#3}\hfill\textit{\small{#4}}%
+\newcommand{\resumeSubheading}[5][]{%
+    \item\textbf{#2}\hfill#3\break%
+    \small{#4}\hfill\textit{\small{#5}}%
+    \IfNoValueF{#1}{%
+        \begin{itemize}[label={}, noitemsep, nolistsep]%
+            \item\footnotesize{#1}%
+        \end{itemize}%
+    }%
 }
 \newcommand{\resumeSubSubheading}[2]{%
     \item%

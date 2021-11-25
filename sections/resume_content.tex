@@ -8,9 +8,14 @@
     \lang{en}{\section{#1}}%
     \lang{fr}{\section{#2}}%
 }
-\newcommand{\resumeSubheadingEnFr}[8]{%
-    \lang{en}{\resumeSubheading{#1}{#2}{#3}{#4}}%
-    \lang{fr}{\resumeSubheading{#5}{#6}{#7}{#8}}%
+
+% Just a trick to have more than 9 arguments
+\NewDocumentCommand{\resumeSubheadingEnFrInner}{m m m m o}{%
+    \lang{fr}{\resumeSubheading[#5]{#1}{#2}{#3}{#4}}%
+}
+\NewDocumentCommand{\resumeSubheadingEnFr}{m m m m o}{%
+    \lang{en}{\resumeSubheading[#5]{#1}{#2}{#3}{#4}}%
+    \resumeSubheadingEnFrInner%
 }
 
 \newcommand{\resumeItemEnFr}[2]{%
@@ -40,12 +45,11 @@
 \insertHeader
 
 %-----------Content-----------
-
 \sectionEnFr{Education}{Formation}
     \resumeSubHeadingListStart
         \resumeSubheadingEnFr
-            {University de Sherbrooke}{Sherbrooke, Qc}{Computer engineering (coop program)}{2017-2021}
-            {University de Sherbrooke}{Sherbrooke, Qc}{Génie informatique (programme coop)}{2017-2021}
+            {University de Sherbrooke}{Sherbrooke, Qc}{Computer engineering (coop program)}{2017-2021}[GPA: 4.2/4.3]
+            {University de Sherbrooke}{Sherbrooke, Qc}{Génie informatique (programme coop)}{2017-2021}[GPA: 4.2/4.3]
         \resumeSubheadingEnFr
             {CÉGEP de Sherbrooke}{Sherbrooke, Qc}{Natural sciences}{2015-2017}
             {CÉGEP de Sherbrooke}{Sherbrooke, Qc}{Sciences de la nature}{2015-2017}
