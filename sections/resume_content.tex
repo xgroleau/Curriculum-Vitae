@@ -4,6 +4,9 @@
 \newcommand{\fr}[1]{\lang{fr}{#1}}
 \newcommand{\enfr}[2]{\en{#1}\fr{#2}}
 
+
+% Commands to support english and french in one command
+
 \newcommand{\sectionEnFr}[2]{%
     \lang{en}{\section{#1}}%
     \lang{fr}{\section{#2}}%
@@ -72,6 +75,24 @@
 
 \sectionEnFr{Work experiences}{Expériences professionnelles}
   \resumeSubHeadingListStart
+      \resumeSubheadingEnFr
+        {Lead firmware developer}{January 2022 - Today}{HOPTech}{Sherbrooke, Qc}
+        {Lead développeur embarqué}{Janvier 2022 - Aujourd'hui}{HOPTech}{Sherbrooke, Qc}
+            \resumeItemListStart
+                \resumeItemEnFr
+                    {Review and design the firmware architectures}
+                    {Réviser et concevoir l'architecture de l'application embarqué}
+                \resumeItemEnFr
+                    {Integrate CI/CD and a test automation framework in an existing C code base}
+                    {Intégrer du CI/CD ainsi que des frameworks de tests automatisés dans un code source déjà établi}
+                \resumeItem
+                    {Work with the hardware team to inform the impact of the hardware design choices}
+                    {Travailler en concert avec l'équipe électrique pour rester informé sur l'impact des choix matériels}
+                \resumeItem
+                    {Develop and oversee new features and drivers}
+                    {Développer et superviser de nouvelles fonctionnalités et pilotes}
+            \resumeItemListEnd
+  
     \resumeSubheadingEnFr
         {Artificial intelligence intern and particle physics simulation}{Summer 2021}{3iT}{Sherbrooke, Qc}
         {Stagiaire en intelligence artificielle et simulations de physique des particules}{Été 2021}{3iT}{Sherbrooke, Qc}
