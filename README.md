@@ -20,5 +20,5 @@ Either by installing the required texlive packages or using `nix develop` to get
 Then to build you can simply invoke `latexmk`.
 
 ``` sh
-latexmk -pdf resume_en.tex resumen_fr.tex
+latexmk -pdf resume_en.tex resume_fr.tex
 ```
