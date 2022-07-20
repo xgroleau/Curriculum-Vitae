@@ -20,6 +20,9 @@
 \RequirePackage{color}
 \RequirePackage{xparse}
 \RequirePackage[T1]{fontenc}
+\RequirePackage{bibentry}
+\RequirePackage{biblatex}
+
 
 \RequirePackage[sfdefault]{FiraSans} % Font
 
@@ -59,14 +62,16 @@
 \newcommand*{\email}[1]{\def\@email{#1}}
 \newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
 \newcommand*{\github}[1]{\def\@github{#1}}
+\newcommand*{\gscholar}[1]{\def\@gscholar{#1}}
 
 \newcommand{\insertHeader}[0]{
     \begin{center}
         \textbf{\Huge\scshape\@name} \\%
         \href{tel:\@phone}{\@phone} $|$ %
-        \href{mailto:\@email}{\@email} $|$ %
-        \href{https://www.linkedin.com/in/\@linkedin/}{linkedin.com/in/\@linkedin} $|$ %
-        \href{https://github.com/\@github/}{github.com/\@github}%
+        \href{mailto:\@email}{\@email} \\ %
+        \href{https://www.linkedin.com/in/\@linkedin/}{Linkedin: \@linkedin} $|$ %
+        \href{https://github.com/\@github/}{GitHub: \@github} $|$ %
+        \href{https://scholar.google.com/citations?user=\@gscholar}{Google Scholar: \@name}%
     \end{center}
 }
 
@@ -74,19 +79,15 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 \newcommand{\resumeItem}[1]{\item #1}
 
-\newcommand{\resumeProjectHeading}[2]{%
-    \item%
-    \textbf{#1}\hfill#2%
-}
+\newcommand{\resumeHeadingText}[1]{\item\textbf{#1}}
+\newcommand{\resumeProjectHeading}[2]{\resumeHeadingText{#1}\hfill#2}
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
 \newcommand{\resumeDatedItem}[2]{\resumeItem{#1\hfill#2}}
-
-
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeSubheading}[5][]{%
-    \item\textbf{#2}\hfill#3\break%
+    \resumeHeadingText{#2}\hfill#3\break%
     \small{#4}\hfill\textit{\small{#5}}%
     \IfNoValueF{#1}{%
         \begin{itemize}[label={}, noitemsep, nolistsep]%
@@ -102,3 +103,8 @@
 \newcommand{\resumeEnumerationStart}{\begin{itemize}[label={}]}
 \newcommand{\resumeEnumerationEnd}{\end{itemize}}
 \newcommand{\resumeEnumeration}[2]{\item\parbox[t]{0.15\textwidth}{\small{\textbf{#1:}}}\parbox[t]{0.75\textwidth}{\small{#2}}}
+
+\newcommand{\resumeListPaper}[2]{%
+    \resumeHeadingText{#1}
+    \printbibliography[heading=none, type=#2]%
+}
