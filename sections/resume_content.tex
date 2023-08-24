@@ -63,7 +63,7 @@
 \sectionEnFr{Skills}{Connaissances particulières}
     \resumeEnumerationStart
         \resumeEnumerationEnFr
-            {Computer}{C/C++, Rust, Python, C\#, JavaScript, Erlang, Nix, Lisp, Prolog, Bash, Matlab, VHDL, Artificial Intelligence and machine learning, Data structures and algorithms, CMake, Docker, Kubernetes, Cloud Computing, CI/CD, LaTeX, HTML and CSS, SQL, Git, Microsoft Office}
+            {Computer}{C/C++, Rust, Python, C\#, JavaScript, Erlang, Nix/NixOS, Lisp, Prolog, Bash, Matlab, VHDL, Artificial Intelligence and machine learning, Data structures and algorithms, CMake, Docker, Kubernetes, Cloud Computing, CI/CD, LaTeX, HTML and CSS, SQL, Git, Microsoft Office}
             {Informatiques}{C/C++, Rust, Python, C\#, JavaScript, Erlang, Nix, Lisp, Prolog, Bash, Matlab, VHDL, Intelligence artificielle et apprentissage machine, Structures de données et algorithmes, CMake, Docker, Kubernetes, Cloud Computing, CI/CD, LaTeX, HTML et CSS, SQL, Git, Suite Office}
         \resumeEnumerationEnFr
             {Linguistic}{Bilingual French and English, 6/10 in Spanish}
@@ -90,14 +90,23 @@
                     {Review and design the firmware architectures}
                     {Concevoir et réviser l'architecture de l'application embarquée}
                 \resumeItemEnFr
-                    {Integrate CI/CD and a test automation in embedded C and Rust codebase}
-                    {Intégrer du CI/CD ainsi que des tests automatisés dans un code source Rust et C embarqué}
+                    {Integrate CI/CD and a test automation in an existing embedded C and Rust codebase}
+                    {Intégrer du CI/CD ainsi que des tests automatisés dans un code source Rust et C embarqué existant}
                 \resumeItemEnFr
                     {Write and deploy micro-services written in Rust for interacting with an IoT device}
                     {Écrire et déployer des micro-services écrits en Rust pour interagir avec des appareils IoT}
                 \resumeItemEnFr
+                    {Develop a monitoring platform for the IoT devices that manages metrics, logs and crash reports}
+                    {Développer une plateforme de monitoring pour les appareils IoT qui gère les metrics, logs et rapports d'accidents}
+                \resumeItemEnFr
                     {Manage and deploy linux servers using NixOS and infrastructure as code (IaC)}
                     {Gérer et déployer des serveurs linux utilisant NixOS et de l'\textit{infrastructure as code} (IaC)}
+                \resumeItemEnFr
+                    {Optimize and reduce the battery consumption by 40\%}
+                    {Optimizer et réduire la consommation de batterie de 40\%}
+                \resumeItemEnFr
+                    {Optimize and increase the data transfer rate by 25\%}
+                    {Optimizer et augmenter la vitesse de transfert de 25\%}
                 \resumeItemEnFr
                     {Work with the hardware team to inform the impact of the hardware design and choices}
                     {Travailler en concert avec l'équipe électrique pour considérer l'impact des choix matériels}
@@ -114,8 +123,8 @@
                     {Design and code deep learning algorithms with Tensorflow and Keras in Python}
                     {Concevoir et programmer des algorithmes d’apprentissage profond avec Tensorflow et Keras}
                 \resumeItemEnFr
-                    {Use the supercomputers of Compute Canada}
-                    {Utiliser les superordinateurs de Calcul Canada}
+                    {Use the supercomputers of Compute Canada to develop algorithms}
+                    {Utiliser les superordinateurs de Calcul Canada pour développer des algorithmes}
             \resumeItemListEnd
 
     \resumeSubheadingEnFr
@@ -124,10 +133,7 @@
             \resumeItemListStart
                 \resumeItemEnFr
                     {Design and code deep learning algorithms with Tensorflow and Keras in Python}
-                    {Concevoir et programmer des algorithmes d’apprentissage profond avec Tensorflow et Keras}
-                \resumeItemEnFr
-                    {Design and code deep learning algorithms with Scikit-learn}
-                    {Concevoir et programmer des algorithmes d'apprentissage profond avec Scikit-learn}
+                    {Concevoir et programmer des algorithmes d’apprentissage profond avec Tensorflow, Keras et Scikit-learn}
                 \resumeItemEnFr
                     {Develop algorithms that will be reimplemented on FPGA}
                     {Développer des algorithmes qui seront implémentés sur des FPGA}
@@ -171,8 +177,8 @@
                     {Developed and develop a product used by people with an autism spectrum disorder}
                     {Concevoir et développer un produit utilisé par des personnes autistes}
                 \resumeItemEnFr
-                    {Actively participate in the decision-making in a start-up}
-                    {Participer activement aux prises de décisions à l’intérieur d’une petite entreprise}
+                    {Develop a new journaling filesystem to store sequential data}
+                    {Développer un système de fichier de type journal pour storer des données séquentielles}
             \resumeItemListEnd
 
     \resumeSubheadingEnFr
@@ -195,7 +201,7 @@
     \resumeSubHeadingListEnd
 
 
-\sectionEnFr{Academic projects}{Projets académiques}
+\sectionEnFr{Other projects}{Autres projets}
     \resumeSubHeadingListStart
       \resumeProjectHeadingEnFr
           {Major design project: SwarmUS}{May 2020 - January 2022}
@@ -215,7 +221,7 @@
                     {Programmer des modules en C++ avec ROS pour permettre le fonctionnement de l’essaim}
                 \resumeItemEnFr
                     {Develop the CMake build system, allowing to reuse code and unit tests the embedded code}
-                    {Programmer des modules en C++ avec ROS pour permettre le fonctionnement de l’essaim}
+                    {Développer un système de construction CMake permettant la réutilisation de code et de tester le code embarqué}
                 \resumeItemEnFr
                     {Participate to the development of a major design project spread over a year and a half}
                     {Participer au développement d’un projet majeur de conception étalé sur un an et demi}
@@ -248,66 +254,7 @@
                     {Develop a web interface showing live data of the wearable using Angular and TypeScript}
                     {Développer une interface web affichant les données du « wearable » avec Angular en TypeScript}
             \resumeItemListEnd
-      \resumeProjectHeadingEnFr
-          {Application with sound recognition }{Jan 2018 - May 2018}
-          {Application avec reconnaissance sonore}{Jan 2018 - Mai 2018}
-            \resumeItemListStart
-                \resumeItemEnFr
-                    {Create and conceptualise an application with vocals}
-                    {Concevoir une application à commande vocale}
-                \resumeItemEnFr
-                    {Use an FPGA card to process digital data from a microphone}
-                    {Utiliser une carte FPGA pour traiter des données numériques provenant d’un micro}
-                \resumeItemEnFr
-                    {Program a user interface in C++ and Qt}
-                    {Programmer une interface graphique en C++ avec Qt}
-            \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-
-\sectionEnFr{School implications}{Implications scolaires}
-    \resumeSubHeadingListStart
-      \resumeProjectHeadingEnFr
-          {Study aid}{Winter 2021}
-          {Entraide à l’étude}{Hiver 2021}
-            \resumeItemListStart
-                \resumeItemEnFr
-                    {Help engineering students to prepare for their exams}
-                    {Aider des étudiants de génie à se préparer pour leurs examens}
-                \resumeItemEnFr
-                    {Help engineering students understand exercises seen in class}
-                    {Accompagner des étudiants pour résoudre les problèmes vus en classe}
-                \resumeItemEnFr
-                    {Contribute to the management of the study group}
-                    {Participer à la gestion d’un groupe d’entraide à l’étude}
-            \resumeItemListEnd
-      \resumeProjectHeadingEnFr
-          {Computer engineering representative of the 63rd promotion}{Winter 2018}
-          {Représentant de génie informatique 63e promotion}{Hiver 2018}
-            \resumeItemListStart
-                \resumeItemEnFr
-                    {Organize events with the members of the promotion}
-                    {Organiser des évènements avec les membres de la promotion ou de la concentration}
-                \resumeItemEnFr
-                    {Order or sell promotional objects}
-                    {Commander et vendre des objets promotionnels}
-                \resumeItemEnFr
-                    {Communicate with the comities and the students}
-                    {Communiquer entre les comités et les étudiants de la concentration}
-            \resumeItemListEnd
-      \resumeProjectHeadingEnFr
-          {Tutoring of two students in an elementary school from an underprivileged area}{Winter 2017}
-          {Tutelle de deux étudiants au primaire d’une école défavorisé}{Hiver 2017}
-            \resumeItemListStart
-                \resumeItemEnFr
-                    {Teach sciences to two elementary school students}
-                    {Enseigner des sciences à deux étudiants du primaire}
-                \resumeItemEnFr
-                    {Tutor two students in a personal science project}
-                    {Accompagner deux étudiants du primaire dans des projets personnels de sciences}
-            \resumeItemListEnd
-    \resumeSubHeadingListEnd
-  
+    \resumeSubHeadingListEnd  
   
 \sectionEnFr{Distinctions and awards}{Prix et distinctions}
     \resumeSubHeadingListStart
