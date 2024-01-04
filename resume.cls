@@ -15,6 +15,7 @@
 \RequirePackage[hidelinks]{hyperref}
 \RequirePackage{fancyhdr}
 \RequirePackage[english,french]{babel}
+\RequirePackage{csquotes}
 \RequirePackage{ifthen}
 \RequirePackage{tabularx}
 \RequirePackage{color}
