@@ -27,7 +27,6 @@
 
 \RequirePackage[sfdefault]{FiraSans} % Font
 
-
 %----------PAGE STYLE----------
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -96,9 +95,8 @@
         \end{itemize}%
     }%
 }
-\newcommand{\resumeSubSubheading}[2]{%
-    \item%
-    \textit{\small{#1}}\hfill\textit{\small{#2}}%
+\newcommand{\resumeSubSubheading}[1]{%
+    \item\textbf{\textit{\small{#1}}}%
 }
 
 \newcommand{\resumeEnumerationStart}{\begin{itemize}[label={}]}

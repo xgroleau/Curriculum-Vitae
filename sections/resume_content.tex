@@ -20,6 +20,10 @@
     \lang{en}{\resumeSubheading[#5]{#1}{#2}{#3}{#4}}%
     \resumeSubheadingEnFrInner%
 }
+\newcommand{\resumeSubSubheadingEnFr}[2]{
+    \lang{en}{\resumeSubSubheading{#1}}%
+    \lang{fr}{\resumeSubSubheading{#2}}%
+}
 
 \newcommand{\resumeItemEnFr}[2]{%
     \lang{en}{\resumeItem{#1}}%
@@ -35,8 +39,9 @@
 }
 \newcommand{\resumeEnumerationEnFr}[4]{
     \lang{en}{\resumeEnumeration{#1}{#2}}%
-    \lang{fr}{\resumeEnumeration{#3}{#4}}%ah
+    \lang{fr}{\resumeEnumeration{#3}{#4}}%
 }
+
 
 %-----------Header-----------
 
@@ -73,15 +78,13 @@
         {Lead firmware developer}{January 2022 - Present}{HOP Tech}{Sherbrooke, Qc}
         {Développeur embarqué principal}{Janvier 2022 - Aujourd'hui}{HOP Tech}{Sherbrooke, Qc}
             \resumeItemListStart
+                \resumeSubSubheadingEnFr{Firmware}{Micrologiciel}
                 \resumeItemEnFr
                     {Oversee the development of the firmware for a Bluetooth wearable used in medical studies}
                     {Superviser le développement d'un firmware pour un wearable Bluetooth utilisé dans des études médicales}
                 \resumeItemEnFr
-                    {Develop a secure bootloader to allow remote firmware upgardes}
-                    {Developper un bootloader sécure permettant les mises à jour à distance}
-                \resumeItemEnFr
-                    {Integrate CI/CD and a test automation in an existing embedded C and Rust codebase}
-                    {Intégrer du CI/CD ainsi que des tests automatisés dans un code source Rust et C embarqué existant}
+                    {Develop a secure bootloader to do remote firmware upgrades (OtA updates)}
+                    {Developper un bootloader sécure permettant les mises à jour à distance (MàJ OtA)}
                 \resumeItemEnFr
                     {Optimize and reduce the battery consumption by 65\%}
                     {Optimizer et réduire la consommation de batterie de 65\%}
@@ -95,28 +98,43 @@
                     {Develop a smart watch UI with an LCD on baremetal firmware with Rust}
                     {Developper une interface graphique de montre intelligente avec LCD sur un firmware baremetal en Rust}
                 \resumeItemEnFr
-                    {Write and deploy micro-services written in Rust and Tokio for interacting with an IoT device}
-                    {Écrire et déployer des micro-services écrits en Rust et Tokio pour interagir avec des appareils IoT}
-                \resumeItemEnFr
-                    {Develop a monitoring platform for the IoT devices that manages metrics, logs and crash reports}
-                    {Développer une plateforme de monitoring pour les appareils IoT qui gère les metrics, logs et rapports d'accidents}
-                \resumeItemEnFr
-                    {Manage and deploy linux servers using NixOS with automated deployment}
-                    {Gérer et déployer des serveurs linux utilisant NixOS avec des déploiements automatisés}
-                \resumeItemEnFr
                     {Develop a communication scheme via Bluetooth with Protocol Buffer}
                     {Developper un schéma de communication via Bluetooth avec Protocol Buffer}
                 \resumeItemEnFr
                     {Debug hardware related problems with logic analyzers, ocsilloscopes and multimeters}
                     {Déverminer des problèmes matériel en utisant des analyseurs logiques, oscilloscopes et multimètres}
+                \resumeItemEnFr
+                    {Collaborate with the hardware team to make key decisions on the hardware and components}
+                    {Collaborer avec l'équipe hardware pour prendre des décisions clés sur le matériel et les composantes}
+                \resumeSubSubheadingEnFr{Backend}{Backend}
+                \resumeItemEnFr
+                    {Write and deploy micro-services written in Rust and Tokio for interacting with an IoT device}
+                    {Écrire et déployer des micro-services écrits en Rust et Tokio pour interagir avec des appareils IoT}
+                \resumeItemEnFr
+                    {Expose and auto-generate OpenAPI specifications of services}
+                    {Exposer et autogénérer les spécifications OpenAPI de services}
+                \resumeItemEnFr
+                    {Develop a monitoring platform for the IoT devices that manages metrics, logs and crash reports}
+                    {Développer une plateforme de monitoring pour les appareils IoT qui gère les metrics, logs et rapports d'accidents}
+                \resumeSubSubheadingEnFr{DevOps/infra}{DevOps/infra}
+                \resumeItemEnFr
+                    {Deploy and manage linux servers using NixOS with automated deployment}
+                    {Déployer et gérer des serveurs linux utilisant NixOS avec des déploiements automatisés}
+                \resumeItemEnFr
+                    {Integrate CI/CD and a test automation in an existing embedded C and Rust codebase}
+                    {Intégrer du CI/CD ainsi que des tests automatisés dans un code source Rust et C embarqué existant}
+                \resumeItemEnFr
+                    {Deploy and manage GitHub self-hosted runners, reducing the GitHub bill by 30\%}
+                    {Déployer et gérer les "runners" auto-hébergés de GitHub, réduisant la facture GitHub de 30\%}
+
             \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 \sectionEnFr{Other projects}{Autres projets}
     \resumeSubHeadingListStart
         \resumeProjectHeadingEnFr
-              {Open-source contributions and freelance}{January 2022 - Present}
-              {Contributions open-sources et travail indépendant}{Janvier 2022 - Aujourd’hui}
+              {Open-source contributions, freelance and personal projects}{January 2022 - Present}
+              {Contributions open-sources, travail indépendant et projets personnels}{Janvier 2022 - Aujourd’hui}
                 \resumeItemListStart
                     \resumeItemEnFr
                         {Contribute to Embassy, an embedded async first Rust hardware abstraction layer and scheduler}
@@ -127,6 +145,9 @@
                     \resumeItemEnFr
                         {Develop and maintain a Shopify theme for a local microbrewery using the online store 2.0}
                         {Développer et maintenir un thème Shopify pour une microbrasserie locale en utilisant le "online store 2.0"}
+                    \resumeItemEnFr
+                        {Deploy and manage a homelab with NixOS using ZFS, monitored with Prometheus and Graphana}
+                        {Déployer et gérer un "homelab" avec NixOS utilisant ZFS, surveillé avec Prometheus et Grafana}
                 \resumeItemListEnd
       \resumeProjectHeadingEnFr
           {SwarmUS}{May 2020 - January 2022}
@@ -142,11 +163,11 @@
                     {Design a distributed swarm robotic application that maps its environment (SLAM)}
                     {Concevoir une application robotique d’essaim distribuée effectuant de la cartographie (SLAM)}
                 \resumeItemEnFr
-                    {Design and code ROS modules in C++ for the swarm capabilities}
-                    {Programmer des modules en C++ avec ROS pour permettre le fonctionnement de l’essaim}
+                    {Develop ROS modules in C++ for the swarm capabilities}
+                    {Développer des modules en C++ avec ROS pour permettre le fonctionnement de l’essaim}
                 \resumeItemEnFr
-                    {Develop the CMake build system, allowing to reuse code and unit tests the embedded code}
-                    {Développer un système de construction CMake permettant la réutilisation de code et de tester le code embarqué}
+                    {Develop the CMake build system to facilitate the reuse of code and unit testing for the embedded code}
+                    {Développer un système de construction CMake, facilitant la réutilisation de code et de tester le code embarqué}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
 
