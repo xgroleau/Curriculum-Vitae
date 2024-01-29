@@ -23,6 +23,7 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage{bibentry}
 \RequirePackage{biblatex}
+\RequirePackage{titlesec}
 
 
 \RequirePackage[sfdefault]{FiraSans} % Font
@@ -47,12 +48,14 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\color{RoyalBlue}
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-8pt}\scshape\raggedright\large\color{RoyalBlue}
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
 
+\setlist[itemize]{itemsep=0.3pt, topsep=0pt}
 % Ensure that generate pdf is machine readable/ATS parsable
+\input{glyphtounicode}
 \pdfgentounicode=1
 
 %----------COMMANDS FOR RESUME----------
