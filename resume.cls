@@ -50,7 +50,7 @@
 
 % Formatting
 \titleformat{\section}{
-  \vspace{-8pt}\scshape\raggedright\large\color{RoyalBlue}
+  \vspace{-10pt}\scshape\raggedright\large\color{RoyalBlue}
 }{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
 
 \setlist[itemize]{itemsep=0.3pt, topsep=0pt}
