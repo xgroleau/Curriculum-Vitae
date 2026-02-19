@@ -1,13 +1,13 @@
 # Curriculum-Vitae
 My resume in LaTeX. 
-Helps manage multilanguage resume using macros so the content is the same in all languages.
+Helps manage a multilingual resume using macros so the content is the same in all languages.
 
 You can download the PDF in the release [here](https://github.com/xgroleau/Curriculum-Vitae/releases/tag/latest)
 
 ## Building
 
 ### Using Nix
-You can build the french and english resume using
+You can build the French and English resume using
 
 ``` shell
 nix build

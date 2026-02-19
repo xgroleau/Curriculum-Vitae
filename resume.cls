@@ -72,7 +72,7 @@
         \textbf{\Huge\scshape\@name} \\%
         \href{tel:\@phone}{\@phone} $|$ %
         \href{mailto:\@email}{\@email} \\ %
-        \href{https://www.linkedin.com/in/\@linkedin/}{Linkedin: \@linkedin} $|$ %
+        \href{https://www.linkedin.com/in/\@linkedin/}{LinkedIn: \@linkedin} $|$ %
         \href{https://github.com/\@github/}{GitHub: \@github} $|$ %
         \href{https://scholar.google.com/citations?user=\@gscholar}{Google Scholar: \@name}%
     \end{center}
